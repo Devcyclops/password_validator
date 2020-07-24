@@ -45,8 +45,8 @@ validator.contains_alphanumeric_and_symbols()
 
 Check if password and confirm password are the same
 <pre>
-validator.confirm_password(confirm_password)
-where confirm_password is the second password
+validator.confirm_password(password2)
+where password2 is the second password
 </pre>
 
 
