@@ -6,13 +6,13 @@ Before you continue, ensure you have met the following requirements:
 * You have python3 installed
 
 <h2>Getting started</h2>
-validate = Validator(username, password)
 
 <pre>
 from validator import (
     password_is_common, username_in_password, contains_alphanumeric_and_symbols, confirm_password,
     is_minimum_length,
 )
+validate = Validator(username, password)
 </pre>
 
 Check if password is common
