@@ -1,4 +1,4 @@
-<h1><b>password_validator</b></h1>
+<h1><b>Password_validator</b></h1>
 A password validator package for python apps(web, desktop and cmd).
 
 <b>Requirements</b>
@@ -29,7 +29,7 @@ validator.username_in_password()
 </pre>
 
 
-Check if passwword is up to the required minimum length
+Check if password is up to the required minimum length
 <pre>
 validator.is_minimum_length(length)
 where length is the minimum length of your choice
