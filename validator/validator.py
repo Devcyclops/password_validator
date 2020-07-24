@@ -27,8 +27,8 @@ class Validator:
             return False
 
     def contains_alphanumeric_and_symbols(self):
-        contains_num_and_letter = re.search("[A-Za-z0-9]+", password)
-        contains_special_character = re.search("[!@#$%^&*]+", password)
+        contains_num_and_letter = search("[A-Za-z0-9]+", self.password)
+        contains_special_character = search("[!@#$%^&*]+", self.password)
         if contains_num_and_letter and contains_special_character:
             return True
         else:
