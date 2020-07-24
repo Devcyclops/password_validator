@@ -6,21 +6,20 @@ class Validator:
         self.username = username
         self.password = password
         
-    def validate_username_not_password(self):
-        if not search(self.password, self.username):
+    def username_in_password(self):
+        if search(self.username, self.password):
             return True
         else:
-            print("password and username are not similar")
             return False
 
-    def password_not_common(self):
+    def password_is_common(self):
         with open("common_passwords.txt", "r") as c:
-            if self.password not in c.read():
+            if self.password in c.read():
                 return True
             else:
                 return False
     
-    def minimum_length(self, min_length):
+    def is_minimum_length(self, min_length):
         if self.password >= min_length:
             return True
         else:
@@ -39,3 +38,6 @@ class Validator:
             return True
         else:
             return False
+
+
+
